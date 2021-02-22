@@ -12,6 +12,9 @@ const Fields = ({ setDateTime }) => {
 
     const [loading, setLoading] = useState(false)
 
+    /**
+     * Crée une date au format ISO-8601 avec les valeurs rentrées dans les différents input
+     */
     const handleCountdown = () => {
         setLoading(true)
         const now = new Date()
@@ -19,6 +22,9 @@ const Fields = ({ setDateTime }) => {
         setDateTime(dateTime)
     }
 
+    /**
+     * Mets à zéro le minuteur
+     */
     const handleReset = () => {
         setLoading(false)
         setDateTime(null)

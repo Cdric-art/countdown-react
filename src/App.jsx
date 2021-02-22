@@ -9,6 +9,9 @@ import './styles/App.css'
 
 function App() {
 
+    /**
+     * dateTime: Date au format ISO-8601
+     */
     const [dateTime, setDateTime] = useState(null)
 
     return (

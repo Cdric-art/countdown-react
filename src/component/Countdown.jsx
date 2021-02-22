@@ -26,6 +26,10 @@ const Countdown = ({dataTime}) => {
     const [seconds, setSecondes] = useState(null)
     const [end, setEnd] = useState(false)
 
+    /**
+     * Mets à jours le state avec les nouvelles valeurs
+     * @param {number} difference
+     */
     const refreshCountdown = (difference) => {
         setDays(Math.floor(difference / DAY))
         setHours(Math.floor(difference % DAY / HOUR))
@@ -36,6 +40,10 @@ const Countdown = ({dataTime}) => {
     useEffect(() => {
         const interval = window.setInterval(() => {
             window.requestAnimationFrame(() => {
+                /**
+                 * Nombre de secondes entre la date renseigné et la date du jour
+                 * @type {number}
+                 */
                 const difference = launchDate - Date.now() / 1000
                 if (difference < 1) {
                     setEnd(true)
