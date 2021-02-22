@@ -1,0 +1,40 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content {
+    padding: 1rem;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+}
+
+.content h2 {
+    font-size: 2rem;
+}
+
+.content .timer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.bloc {
+    min-width: 130px;
+    padding: 1rem;
+    border: 1px solid #ffffff;
+}
+
+.bloc strong,
+.bloc em {
+    display: block;
+}
+
+.bloc em {
+    margin-top: 10px;
+}
+
+.bloc strong {
+    font-size: 2.5rem;
+}
+

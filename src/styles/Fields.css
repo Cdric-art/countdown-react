@@ -1,0 +1,35 @@
+.fields {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 800px;
+    margin: 10px auto;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.field label {
+    display: block;
+    font-size: 1rem;
+}
+
+.field input {
+    text-align: center;
+    display: block;
+    width: 40%;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+.field .btn-start {
+    margin-bottom: 10px;
+}
