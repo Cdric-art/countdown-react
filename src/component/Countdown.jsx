@@ -53,10 +53,10 @@ const Countdown = ({dataTime}) => {
         <div className="container">
             <div className="content">
                 {end ? (
-                    <h2>End</h2>
+                    <h2 className="end">Psst Je suis à la recherche d'un poste de Développeur React Js !</h2>
                 ) : (
                     <>
-                        <h2>Coming soon !</h2>
+                        <h2>Coming soon 🚀</h2>
                         <div className="timer">
                             <div className="bloc">
                                 <Bloc time={days} type="Jours"/>
